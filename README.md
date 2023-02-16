@@ -68,11 +68,11 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Mayito Ismail**
 
-- GitHub: [@githubhandle](https://https://github.com/ismayito)
-- Twitter: [@twitterhandle](https://twitter.com/@IsmailMayito)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mayito-ismail-2b0067178/)
+- GitHub: [ismayito](https://https://github.com/ismayito)
+- Twitter: [@IsmailMayito](https://twitter.com/@IsmailMayito)
+- LinkedIn: [mayito-ismail-2b0067178](https://www.linkedin.com/in/mayito-ismail-2b0067178/)
 
 🔭 Future Features
 
