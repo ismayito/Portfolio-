@@ -76,10 +76,8 @@ To run the project, execute the following command:
 
 🔭 Future Features
 
-- Projects section
-- about section
 - Footer section
-- Call to action section
+- Call to action section(contact form)
 
 ## 🤝 Contributing
 
