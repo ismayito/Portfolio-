@@ -308,35 +308,48 @@
 
       <!-- contact section -->
       <footer class="footer">
-        <div class="bg-image"></div>
-        <section class="form">
-          <h2 class="title contact-title">Contact me</h2>
-          <article class="intro-footer">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </article>
-        </section>
-        <form action="https://formspree.io/f/xknydra" method="post" class="input form">
-          <input type="text" class="text" placeholder="Yeremias" maxlength="30" required/>
+        <h2 class="contact-title title">Contact me</h2>
+        <article class="contact-info">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </article>
+        <form
+          action="https://formspree.io/f/xknydra"
+          method="post"
+          class="input form"
+        >
+          <input
+            type="text"
+            class="text"
+            placeholder="Yeremias"
+            maxlength="28"
+            name="user_name"
+            required
+          />
           <input
             type="email"
             class="text"
+            name="email"
             placeholder="natajayanj14@gmail.com"
             required
           />
           <textarea
             name="text"
-            id=""
+            id="message"
             class="text text-area"
-            cols="30"
+            cols="20"
             rows="10"
+            name="message"
             maxlength="500"
             required
-            placeholder="write your message here"
+            placeholder="Write your message here"
           >
           </textarea>
           <button type="submit" class="submit see-project">Get in touch</button>
+          <div class="img">
+            <img src="assets/images/Shape.svg" alt="" class="contact-img" />
+          </div>
         </form>
       </footer>
     </div>
