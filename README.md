@@ -24,7 +24,7 @@ this is Ismayito`s Portfolio project
 
 ### Tech Stack <a name="tech-stack"></a>
 
--html,css, linters git, figma and github
+-html,css, linters, git, figma and github
 
 ### Key Features <a name="key-features"></a>
 
@@ -80,7 +80,7 @@ To run the project, execute the following command:
 
 🔭 Future Features
 
-- The desktop version of the project
+- Adding functionality and interactivity tothe project
 
 ## 🤝 Contributing
 
