@@ -345,6 +345,10 @@ body {
   padding: 15px 36px 15px 16px;
 }
 
+.submit {
+  border-radius: 0.8rem;
+}
+
 .img {
   display: flex;
   justify-content: center;
