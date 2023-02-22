@@ -15,7 +15,7 @@
 
 # 📖 Portfolio microverse project
 
-this is a Hello-world microverse project that shows its heading
+this is Ismayito`s Portfolio project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -28,7 +28,11 @@ this is a Hello-world microverse project that shows its heading
 
 ### Key Features <a name="key-features"></a>
 
-- Hello-world Microverse heading
+- The homepage of the Portifolio Project
+- The headline section
+- The section showing recent projects/works
+- the about me section
+- The contact me section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,8 +80,7 @@ To run the project, execute the following command:
 
 🔭 Future Features
 
-- Footer section
-- Call to action section(contact form)
+- The desktop version of the project
 
 ## 🤝 Contributing
 
@@ -91,3 +94,7 @@ Give a ⭐️ if you like this project!
 
 📝 License
 This project is [MIT](MIT.md) licensed.
+
+🙏 Acknowledgments
+
+I would like to thank [@melybee-07](https://github.com/melybee-07) for the contribution to this codebase
