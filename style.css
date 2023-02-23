@@ -25,6 +25,15 @@ body {
   font-weight: 700;
   line-height: 2rem;
   text-decoration: none;
+  animation: animate 2s;
+}
+@keyframes animate {
+  form{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 .links {
