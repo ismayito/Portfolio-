@@ -27,6 +27,10 @@ body {
   text-decoration: none;
 }
 
+.links {
+  display: none;
+}
+
 .headline {
   background-image: url("assets/images/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
@@ -49,6 +53,10 @@ body {
   font-size: 4rem;
   line-height: 5.2rem;
   padding-top: 8.1rem;
+}
+
+.heading-desk {
+  display: none;
 }
 
 .intro-info {
@@ -106,11 +114,24 @@ body {
   padding-bottom: 11.4rem;
 }
 
+.desktop-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-1-desktop {
+  display: none;
+}
+
 .title {
   color: #172b4d;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.4rem;
+}
+
+.title-desk {
+  display: none;
 }
 
 .categories {
@@ -120,6 +141,10 @@ body {
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1.6rem;
+}
+
+.categories-desk {
+  display: none;
 }
 
 .categories li {
@@ -146,6 +171,10 @@ body {
   float: left;
 }
 
+.intro-works-project2 {
+  display: none;
+}
+
 .languages {
   display: flex;
   padding-left: 0;
@@ -154,6 +183,10 @@ body {
   font-size: 1.5rem;
   line-height: 1.6rem;
   letter-spacing: 0.03em;
+}
+
+.lang-desk {
+  display: none;
 }
 
 .languages li {
@@ -226,6 +259,7 @@ body {
   line-height: 2.4rem;
   border-radius: 0.8rem;
   margin-bottom: 4.8rem;
+  width: 35% !important;
 }
 
 .about-languages {
@@ -347,6 +381,7 @@ body {
 
 .submit {
   border-radius: 0.8rem;
+  width: 35% !important;
 }
 
 .img {
@@ -359,4 +394,213 @@ body {
   height: 5px;
   margin-bottom: 0.8px;
   margin-top: 2rem;
+}
+
+/* desktop version css styles */
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .header {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 3.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #344563;
+  }
+
+  .links li {
+    list-style: none;
+  }
+
+  .links a {
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .headilne-desk {
+    background-image: url("assets/images/Header bg-desk.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 721px;
+    padding-top: 11.8rem;
+    padding-left: 3.46rem;
+    padding-right: 0.8rem;
+  }
+
+  .introduction {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .heading-desk {
+    display: block;
+    font-size: 4.8rem;
+    line-height: 6rem;
+    letter-spacing: 0.037rem;
+    margin-bottom: 0;
+  }
+
+  .intro-info {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    gap: 4.6rem;
+  }
+
+  .project-1-desktop {
+    display: inline-block;
+  }
+
+  .intro-works-project1 {
+    display: none;
+  }
+
+  .intro-works-project2 {
+    display: block;
+  }
+
+  .projects-two-desk img {
+    order: 1;
+  }
+
+  .project {
+    display: none;
+  }
+
+  .title {
+    line-height: 5.2rem;
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  .title-mobile {
+    display: none;
+  }
+
+  .title-desk {
+    display: block;
+  }
+
+  .categories {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin: 2rem auto;
+  }
+
+  .categories-mobile {
+    display: none;
+  }
+
+  .categories-desk {
+    display: flex;
+  }
+
+  .intro-works {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .languages {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-top: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .lang-desk {
+    display: inline;
+  }
+
+  .see-project {
+    width: 25%;
+    border-radius: 0.8rem;
+  }
+
+  /* About me section */
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 14.2rem;
+  }
+
+  .about-intro {
+    margin-top: 0;
+    margin-left: 14.6rem;
+  }
+
+  .about-languages {
+    margin-right: 14.6rem;
+  }
+
+  .title-about {
+    margin-top: 0;
+  }
+
+  .social-about {
+    margin-bottom: 3.4rem;
+  }
+
+  .lang {
+    flex-direction: row;
+    padding-inline-start: 0;
+    gap: 2.4rem;
+  }
+
+  .lang1 {
+    flex-direction: column;
+    width: 122px;
+    align-items: start;
+    gap: 1.6rem;
+    padding: 2rem 1.2rem;
+  }
+
+  .language-one {
+    padding-right: 0;
+  }
+
+  .footer {
+    background-image: url("assets/images/contact form background shapes.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .form {
+    padding-left: 6.3rem;
+    padding-right: 6.3rem;
+    gap: 2.7rem;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+  }
 }
