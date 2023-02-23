@@ -108,6 +108,11 @@ body {
 
 .project-1 {
   width: 100%;
+  transition: transform 0.5s ease-out;
+}
+
+.project-1:hover {
+  transform: scale(1.1);
 }
 
 .last-project {
@@ -382,6 +387,13 @@ body {
 .submit {
   border-radius: 0.8rem;
   width: 35% !important;
+  transition-property: background-color;
+  transition-duration: 2s;
+  transition-delay: 0s;
+}
+
+.submit:hover {
+  background-color: rgb(255, 17, 0);
 }
 
 .img {
@@ -541,15 +553,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 14.2rem;
+    background-color: #fff;
   }
 
   .about-intro {
     margin-top: 0;
-    margin-left: 14.6rem;
+    padding-left: 14.6rem;
   }
 
   .about-languages {
-    margin-right: 14.6rem;
+    padding-right: 14.6rem;
   }
 
   .title-about {
