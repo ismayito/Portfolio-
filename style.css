@@ -171,6 +171,10 @@ body {
   float: left;
 }
 
+.intro-works-project2 {
+  display: none;
+}
+
 .languages {
   display: flex;
   padding-left: 0;
@@ -255,6 +259,7 @@ body {
   line-height: 2.4rem;
   border-radius: 0.8rem;
   margin-bottom: 4.8rem;
+  width: 35% !important;
 }
 
 .about-languages {
@@ -376,6 +381,7 @@ body {
 
 .submit {
   border-radius: 0.8rem;
+  width: 35% !important;
 }
 
 .img {
@@ -395,6 +401,11 @@ body {
 @media screen and (min-width: 768px) {
   .navbar {
     display: none;
+  }
+
+  .header {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
   }
 
   .links {
@@ -453,10 +464,19 @@ body {
     grid-template-columns: 1fr 1fr;
     width: 80%;
     margin: 0 auto;
+    gap: 4.6rem;
   }
 
   .project-1-desktop {
     display: inline-block;
+  }
+
+  .intro-works-project1 {
+    display: none;
+  }
+
+  .intro-works-project2 {
+    display: block;
   }
 
   .projects-two-desk img {
@@ -470,6 +490,7 @@ body {
   .title {
     line-height: 5.2rem;
     font-size: 4rem;
+    margin-bottom: 0;
   }
 
   .title-mobile {
@@ -483,6 +504,7 @@ body {
   .categories {
     font-size: 1.8rem;
     line-height: 2.4rem;
+    margin: 2rem auto;
   }
 
   .categories-mobile {
@@ -501,11 +523,17 @@ body {
   .languages {
     font-size: 1.2rem;
     line-height: 1.6rem;
+    margin-top: 2.4rem;
     margin-bottom: 4rem;
   }
 
   .lang-desk {
     display: inline;
+  }
+
+  .see-project {
+    width: 25%;
+    border-radius: 0.8rem;
   }
 
   /* About me section */
@@ -517,6 +545,11 @@ body {
 
   .about-intro {
     margin-top: 0;
+    margin-left: 14.6rem;
+  }
+
+  .about-languages {
+    margin-right: 14.6rem;
   }
 
   .title-about {
@@ -529,10 +562,16 @@ body {
 
   .lang {
     flex-direction: row;
+    padding-inline-start: 0;
+    gap: 2.4rem;
   }
 
   .lang1 {
     flex-direction: column;
+    width: 122px;
+    align-items: start;
+    gap: 1.6rem;
+    padding: 2rem 1.2rem;
   }
 
   .language-one {
@@ -548,6 +587,7 @@ body {
   .form {
     padding-left: 6.3rem;
     padding-right: 6.3rem;
+    gap: 2.7rem;
   }
 
   .contact-info {
