@@ -36,7 +36,7 @@ this is Ismayito`s Portfolio project
 
 ## 🚀 Live Demo
 
-[https://ismayito.github.io/Portfolio-/]Live Demo Link
+[Live Demo Link](https://ismayito.github.io/Portfolio-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
