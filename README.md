@@ -34,6 +34,10 @@ this is Ismayito`s Portfolio project
 - the about me section
 - The contact me section
 
+## 🚀 Live Demo
+
+[Live Demo Link](https://ismayito.github.io/Portfolio-/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>

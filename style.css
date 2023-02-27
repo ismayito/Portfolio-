@@ -27,11 +27,13 @@ body {
   text-decoration: none;
   animation: animate 2s;
 }
+
 @keyframes animate {
-  form{
+  form {
     transform: rotate(0deg);
   }
-  to{
+
+  to {
     transform: rotate(360deg);
   }
 }
