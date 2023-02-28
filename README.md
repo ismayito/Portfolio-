@@ -84,7 +84,7 @@ To run the project, execute the following command:
 
 🔭 Future Features
 
-- Adding functionality and interactivity tothe project
+- Adding functionality and interactivity to the project
 
 ## 🤝 Contributing
 
@@ -101,4 +101,4 @@ This project is [MIT](MIT.md) licensed.
 
 🙏 Acknowledgments
 
-I would like to thank [@melybee-07](https://github.com/melybee-07) for the contribution to this codebase
+I would like to thank the following for the contribution to this codebase -[@melybee-07](https://github.com/melybee-07) -[@joyapisi] (https://github.com/)
