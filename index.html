@@ -444,33 +444,45 @@
             class="input form"
             title="contact-me"
           >
-            <input
-              type="text"
-              class="text"
-              placeholder="Yeremias*"
-              maxlength="30"
-              name="user_name"
-              required
-            />
-            <input
-              type="email"
-              class="text"
-              name="email"
-              placeholder="natajayanj14@gmail.com*"
-              required
-            />
-            <textarea
-              name="text"
-              id="message"
-              class="text text-area"
-              cols="30"
-              rows="7"
-              name="message"
-              maxlength="500"
-              required
-              placeholder="Write your message here*"
-            >
-            </textarea>
+            <div class="my-form">
+              <label for="name" class="label">Name:</label>
+              <input
+                type="text"
+                id="name"
+                class="text"
+                placeholder="Yeremias*"
+                maxlength="30"
+                name="user_name"
+                required
+              />
+            </div>
+            <div class="my-form">
+              <label for="email" class="label">Email address:</label>
+              <input
+                type="email"
+                class="text"
+                name="email"
+                id="email"
+                placeholder="natajayanj14@gmail.com*"
+                required
+              />
+            </div>
+
+            <div class="my-form">
+              <label for="message" class="label"> Message:</label>
+              <textarea
+                name="text"
+                id="message"
+                class="text text-area"
+                cols="30"
+                rows="7"
+                name="message"
+                maxlength="500"
+                required
+                placeholder="Write your message here*"
+              >
+              </textarea>
+            </div>
             <div class="submit-btn">
               <button
                 type="submit"
