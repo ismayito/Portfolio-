@@ -20,8 +20,9 @@ body {
 
 .menu-close-btn {
   position: fixed;
-  top: 25px;
-  right: 25px;
+  border: 2px solid #67798e;
+  top: 20px;
+  right: 30px;
 }
 
 section.mobile-menu {
@@ -32,24 +33,25 @@ section.mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: none;
 }
-section.visible{
+
+section.visible {
   display: block;
 }
 
-div.menu-links-list{
+div.menu-links-list {
   display: flex;
   flex-direction: column;
 }
 
-section.mobile-menu  a {
+section.mobile-menu a {
   margin-bottom: 30px;
   text-decoration: none;
-  color:white;
-  font-family: 'Poppins';
+  color: white;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -490,6 +492,10 @@ section.mobile-menu  a {
     font-size: 1.5rem;
     line-height: 2rem;
     color: #344563;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   .links li {

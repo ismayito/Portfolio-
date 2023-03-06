@@ -85,6 +85,8 @@ To run the project, execute the following command:
 🔭 Future Features
 
 - Adding functionality and interactivity to the project
+- Adding a mobile menu to the project
+- Adding a popup window to display recent works
 
 ## 🤝 Contributing
 
@@ -101,4 +103,4 @@ This project is [MIT](MIT.md) licensed.
 
 🙏 Acknowledgments
 
-I would like to thank the following for the contribution to this codebase -[@melybee-07](https://github.com/melybee-07) -[@joyapisi] (https://github.com/)
+I would like to thank the following for the contribution to this codebase -[@melybee-07](https://github.com/melybee-07) -[@joyapisi] (https://github.com/) -[@SanaTameem] (https://github.com/SanaTameem) -[@0xMALVEE] (https://github.com/0xMALVEE)
