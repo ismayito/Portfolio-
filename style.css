@@ -147,6 +147,12 @@ section.mobile-menu a {
 
 /*popup window mobile  */
 .modal-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 18px;
+  margin-left: 16px;
+  margin-right: 16px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1.6rem;
