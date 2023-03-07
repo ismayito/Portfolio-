@@ -2,6 +2,19 @@ const menuBtn = document.getElementById("menu-close-btn");
 const menuSection = document.querySelector("section.mobile-menu");
 const closeButton = document.getElementById("close-btn");
 const menuItems = document.getElementsByClassName("menu-item");
+const OpenProjectBtn = document.getElementsByClassName('see-project');
+const PopUp = document.querySelector("section.modal-mobile");
+const ClosePopUp = document.querySelector("img.close-window");
+
+for (let i = 0; i < OpenProjectBtn.length; i += 1) {
+  OpenProjectBtn[i].addEventListener("click", () => {
+    PopUp.classList.add("visible");
+  });
+}
+
+ClosePopUp.addEventListener("click", function(){
+  PopUp.classList.remove("visible");
+})
 
 for (let i = 0; i < menuItems.length; i += 1) {
   menuItems[i].addEventListener("click", () => {
