@@ -145,6 +145,54 @@ section.mobile-menu a {
   grid-template-columns: 1fr;
 }
 
+/*popup window mobile  */
+.modal-mobile {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1.6rem;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.6rem;
+}
+
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-head h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.modal-mobile article {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.window-btn {
+  border-radius: 0.8rem !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px !important;
+  gap: 10px;
+}
+
 .projects {
   border: 1px solid #dfe1e6;
   border-radius: 1.6rem;
