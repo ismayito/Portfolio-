@@ -146,6 +146,7 @@ section.mobile-menu a {
 }
 
 /*popup window mobile  */
+
 .modal-mobile {
   position: fixed;
   top: 0;
@@ -153,7 +154,6 @@ section.mobile-menu a {
   margin-top: 18px;
   margin-left: 16px;
   margin-right: 16px;
-  padding-bottom: 18px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1.6rem;
@@ -163,7 +163,6 @@ section.mobile-menu a {
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.6rem;
-  display: none;
 }
 
 .modal-head {
@@ -642,7 +641,7 @@ section.mobile-menu a {
   }
 
   section.modal-mobile > ul.categories {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   section.modal-mobile div.lang-buttons > ul.languages {
