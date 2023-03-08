@@ -6,15 +6,15 @@ const OpenProjectBtn = document.getElementsByClassName("see-project");
 const PopUp = document.querySelector("section.modal-mobile");
 const ClosePopUp = document.querySelector("img.close-window");
 
-for (let i = 0; i < OpenProjectBtn.length; i += 1) {
-  OpenProjectBtn[i].addEventListener("click", () => {
-    PopUp.classList.add("visible");
-  });
-}
+// for (let i = 0; i < OpenProjectBtn.length; i += 1) {
+//   OpenProjectBtn[i].addEventListener("click", () => {
+//     PopUp.classList.add("visible");
+//   });
+// }
 
-ClosePopUp.addEventListener("click", function () {
-  PopUp.classList.remove("visible");
-});
+// ClosePopUp.addEventListener("click", function () {
+//   PopUp.classList.remove("visible");
+// });
 
 for (let i = 0; i < menuItems.length; i += 1) {
   menuItems[i].addEventListener("click", () => {
@@ -88,15 +88,16 @@ const data = [
 ];
 
 
-function createPopUp(title, company, description,role,year,img,languages,liveLink) {
+function createPopUp(id,title, company, description,role,year,img,languages,liveLink) {
   return `
-  <section class="modal-mobile">
+  <section class="modal-mobile" id="popup-project-${id}">
         <div class="modal-head">
           <h2 class="title">${title}</h2>
           <img
-            src="${img}"
+            src="assets/images/close-window.svg"
             alt="close-window"
             class="close-window"
+            id="close-${id}"
           />
         </div>
         <ul class="categories">
@@ -135,15 +136,15 @@ function createPopUp(title, company, description,role,year,img,languages,liveLin
           <div class="lang-buttons">
             <ul class="languages">
               <li>${languages[0]}</li>
-              <li>${languages[0]}</li>
-              <li>${languages[0]}</li>
+              <li>${languages[1]}</li>
+              <li>${languages[2]}</li>
             </ul>
             <img src="assets/images/vector 4.svg" alt="line" class="line" />
             <div class="window-buttons">
               <button class="window-btn">
-                <li href=`${}`}">See live
+               See live
                 <span><img src="assets/images/live.svg" alt="live" /></span>
-                </li>
+           
               </button>
               <button class="window-btn">
                 See source
@@ -157,3 +158,24 @@ function createPopUp(title, company, description,role,year,img,languages,liveLin
       </section>
   `
 }
+
+var final = ""
+data.forEach(item =>{
+  const html = createPopUp(item.id, item.title,item.company, item.description, item.role, item.year, item.img , item.languages, item.liveLink)
+  final += html;
+})
+
+document.getElementById('popup-container').innerHTML = final;
+
+// event listeners
+data.forEach(item=>{
+  // open event
+  const id = item.id;
+  document.getElementById("openpop-" + id).addEventListener("click", function(){
+    document.getElementById("popup-project-" + id).classList.add("visible");
+  })
+  // close event
+  document.getElementById("close-"+id).addEventListener('click', function(){
+    document.getElementById("popup-project-" + id).classList.remove("visible");
+  })
+})
