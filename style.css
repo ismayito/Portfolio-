@@ -153,6 +153,7 @@ section.mobile-menu a {
   margin-top: 18px;
   margin-left: 16px;
   margin-right: 16px;
+  padding-bottom: 18px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1.6rem;
@@ -185,19 +186,45 @@ section.mobile-menu a {
   color: #344563;
 }
 
-.window-buttons {
+.project-wrapper {
   display: flex;
-  gap: 1.2rem;
+  flex-direction: column;
 }
 
-.window-btn {
+/* .window-buttons {
+  display: flex;
+  gap: 1.2rem;
+  width: 142px;
+  height: 40px;
+  left: 5px;
+  bottom: 16px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+} */
+
+.window-buttons {
   border-radius: 0.8rem !important;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 12px 14px !important;
   gap: 10px;
+  margin-top: 10px;
+}
+
+.window-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 25px;
+  color: #6070ff;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.window-btn:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .projects {
@@ -604,6 +631,39 @@ section.mobile-menu a {
 
   .project-1-desktop {
     display: inline-block;
+  }
+
+  #project1-desktop {
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .modal-mobile {
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+
+  section.modal-mobile.project-1-desktop {
+    height: 25%;
+  }
+
+  section.modal-mobile > ul.categories {
+    margin-left: 0px;
+  }
+
+  section.modal-mobile div.lang-buttons > ul.languages {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.9rem;
+  }
+
+  .line {
+    display: none;
   }
 
   .intro-works-project1 {
