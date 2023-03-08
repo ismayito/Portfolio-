@@ -92,7 +92,8 @@ function createPopUp(
   sourceCode,
 ) {
   return `
-  <section class="modal-mobile" id="popup-project-${id}">
+  <section class="popup-window"  id="popup-project-${id}">
+   <section class="modal-mobile" id="popup-project-${id}">
         <div class="modal-head">
           <h2 class="title">${title}</h2>
           <img
@@ -159,6 +160,8 @@ function createPopUp(
           </div>
         </div>
       </section>
+    </section>
+
   `;
 }
 
@@ -183,6 +186,7 @@ data.forEach((item) => {
 document.getElementById('popup-container').innerHTML = final;
 
 // event listeners
+
 data.forEach((item) => {
   // open event
   const { id } = item;
