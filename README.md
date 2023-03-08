@@ -21,10 +21,11 @@ this is Ismayito`s Portfolio project
 
 -Html
 -css
+-javascript
 
 ### Tech Stack <a name="tech-stack"></a>
 
--html,css, linters, git, figma and github
+-html,css, linters, git, javascript figma and github
 
 ### Key Features <a name="key-features"></a>
 
@@ -32,7 +33,9 @@ this is Ismayito`s Portfolio project
 - The headline section
 - The section showing recent projects/works
 - the about me section
-- The contact me section
+- The contact me sectio
+- The mobile menu
+- The project popup window
 
 ## 🚀 Live Demo
 
@@ -85,8 +88,7 @@ To run the project, execute the following command:
 🔭 Future Features
 
 - Adding functionality and interactivity to the project
-- Adding a mobile menu to the project
-- Adding a popup window to display recent works
+- Adding client form validation
 
 ## 🤝 Contributing
 
