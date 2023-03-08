@@ -186,21 +186,15 @@ section.mobile-menu a {
   color: #344563;
 }
 
+.PopUp-link {
+  text-decoration: none;
+  display: flex;
+}
+
 .project-wrapper {
   display: flex;
   flex-direction: column;
 }
-
-/* .window-buttons {
-  display: flex;
-  gap: 1.2rem;
-  width: 142px;
-  height: 40px;
-  left: 5px;
-  bottom: 16px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-} */
 
 .window-buttons {
   border-radius: 0.8rem !important;
