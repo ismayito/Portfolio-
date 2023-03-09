@@ -550,7 +550,9 @@ section.mobile-menu a {
 }
 
 .img {
+  margin-top: 0;
   display: flex;
+
   justify-content: center;
 }
 
@@ -559,6 +561,27 @@ section.mobile-menu a {
   height: 5px;
   margin-bottom: 0.8px;
   margin-top: 2rem;
+}
+
+.submit-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  background-color: #f00;
+  padding: 1.5rem;
+  color: #fff;
+  font-size: 1.6rem;
+  border: 1px dashed #fff;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.error {
+  display: hidden;
 }
 
 /* desktop version css styles */
@@ -822,6 +845,8 @@ section.mobile-menu a {
 
   .submit-btn {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
