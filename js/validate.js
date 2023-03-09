@@ -1,4 +1,4 @@
-const form = document.getElementById("my-form");
+const form = document.getElementById("form");
 const email = document.getElementById("email");
 const error = document.getElementById("error-message");
 let msg = "Please your email must be in lowercase letters";
@@ -17,3 +17,11 @@ function showSucess(input, message) {
 function showError(input, message) {
   return errorMessage(input, msg, true);
 }
+
+
+form.addEventListener('submit', function(e){
+  if (email.value != email.value.toLowerCase()){
+    e.preventDefault();
+    error.textContent = msg;
+  }
+})
