@@ -1,15 +1,16 @@
-const userEmail = document.getElementById('email').value;
-const userName = document.getElementById('name').value;
-const userMessage = document.getElementById('message').value;
 const myform = document.getElementById('form-contact');
 
-const userInput = {
-  name: userName,
-  email: userEmail,
-  meassage: userMessage,
-};
-
 function store() {
+  const userEmail = document.getElementById('email').value;
+  const userName = document.getElementById('name').value;
+  const userMessage = document.getElementById('message').value;
+
+  const userInput = {
+    name: userName,
+    email: userEmail,
+    meassage: userMessage,
+  };
+
   localStorage.setItem('user', JSON.stringify(userInput));
 }
 
@@ -18,11 +19,10 @@ myform.addEventListener('change', (e) => {
   store();
 });
 
-window.onload = function storedData() {
-  if (localStorage.length !== 0) {
-    const retievedData = JSON.parse(localStorage.getItem('user'));
-    userName.value = retievedData.name;
-    userEmail.value = retievedData.email;
-    userMessage.value = retievedData.meassage;
-  }
-};
+const gottenData = JSON.parse(localStorage.getItem('user'));
+
+if (localStorage.length !== 0) {
+  document.getElementById('email').value = gottenData.email;
+  document.getElementById('name').value = gottenData.name;
+  document.getElementById('message').value = gottenData.meassage;
+}
