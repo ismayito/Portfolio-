@@ -36,6 +36,7 @@ this is Ismayito`s Portfolio project
 - The contact me sectio
 - The mobile menu
 - The project popup window
+- Client form validation
 
 ## 🚀 Live Demo
 
@@ -88,7 +89,7 @@ To run the project, execute the following command:
 🔭 Future Features
 
 - Adding functionality and interactivity to the project
-- Adding client form validation
+- Store information in the browser
 
 ## 🤝 Contributing
 
