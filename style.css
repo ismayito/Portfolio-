@@ -552,7 +552,6 @@ section.mobile-menu a {
 .img {
   margin-top: 0;
   display: flex;
-
   justify-content: center;
 }
 
@@ -578,10 +577,6 @@ section.mobile-menu a {
   border: 1px dashed #fff;
   border-radius: 8px;
   margin: 5px 0;
-}
-
-.error {
-  display: hidden;
 }
 
 /* desktop version css styles */
