@@ -14,14 +14,16 @@ function showSucess(input, message) {
   return errorMessage(input, "", false);
 }
 
-function showError(input, message) {
-  return errorMessage(input, msg, true);
-}
+// function showError(input, message) {
+//   return errorMessage(input, msg, true);
+// }
+
 
 
 form.addEventListener('submit', function(e){
   if (email.value != email.value.toLowerCase()){
     e.preventDefault();
     error.textContent = msg;
+    error.className = "error-message";
   }
 })
