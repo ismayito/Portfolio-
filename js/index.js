@@ -190,6 +190,7 @@ document.getElementById('popup-container').innerHTML = final;
 data.forEach((item) => {
   // open event
   const { id } = item;
+
   document.getElementById(`openpop-${id}`).addEventListener('click', () => {
     document.getElementById(`popup-project-${id}`).classList.add('visible');
   });
