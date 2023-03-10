@@ -21,7 +21,7 @@ myform.addEventListener('change', (e) => {
 
 const gottenData = JSON.parse(localStorage.getItem('user'));
 
-if (localStorage.length !== 0) {
+if (gottenData) {
   document.getElementById('email').value = gottenData.email;
   document.getElementById('name').value = gottenData.name;
   document.getElementById('message').value = gottenData.meassage;
