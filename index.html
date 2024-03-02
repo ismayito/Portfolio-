@@ -39,9 +39,10 @@
         </svg>
       </span>
       <div class="menu-links-list">
-        <a href="#portfolio" class="menu-item"> PortFolio </a>
-        <a href="#projects" class="menu-item">projects</a>
+        <a href="/" class="menu-item"> PortFolio </a>
+        <a href="#projects" class="menu-item">Recent Works</a>
         <a href="#contact" class="menu-item">Contact</a>
+        <a href="#about-me" class="menu-item">About</a>
       </div>
     </section>
 
@@ -58,23 +59,44 @@
           />
           <ul class="links">
             <li>
-              <a href="#portfolio"> PortFolio </a>
+              <a href="/"> PortFolio </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">Recent Works</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#about-me" class="menu-item">About</a>
             </li>
           </ul>
         </nav>
       </header>
       <section class="headline headilne-desk" title="Ismayito`s home page">
         <div class="introduction">
-          <h1 class="heading">I’m Mayito Glad to see you!</h1>
-          <h1 class="heading heading-desk">
-            I’m Mayito <br />Glad to see you!
-          </h1>
+          <div class="heading-mob">
+            <h1 class="heading">I’m Mayito Glad to see you!</h1>
+            <div class="profile-image-mob">
+              <img
+                src="assets/images/profile-img.png"
+                alt="profile-image"
+                class="img-profile-mob"
+              />
+            </div>
+          </div>
+          <div class="heading-container-desk">
+            <h1 class="heading heading-desk">
+              I’m Mayito <br />Glad to see you!
+            </h1>
+            <div class="profile-image">
+              <img
+                src="assets/images/profile-img.png"
+                alt="profile-image"
+                class="img-profile"
+              />
+            </div>
+          </div>
           <p class="intro-info">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
@@ -85,12 +107,16 @@
           <ul class="social-icons" title="social-handles">
             <li class="list">
               <a href="#">
-                <img src="assets/images/icon1.svg" alt="icon1" />
+                <img src="assets/images/x.svg" class="linkin-img" alt="icon1" />
               </a>
             </li>
             <li class="list">
               <a href="#">
-                <img src="assets/images/Linkedin icon.svg" alt="icon2" />
+                <img
+                  src="assets/images/Linkedin icon.svg"
+                  class="linkin-img"
+                  alt="icon2"
+                />
               </a>
             </li>
             <li class="list">
@@ -442,7 +468,7 @@
         <section class="about-languages">
           <ul class="lang-skills" title="programming languages and skills">
             <li class="languages-skills">
-              <div class="language-one" title="programming langauges">
+              <div class="language-one" title="programming languages">
                 Languages
                 <img src="assets/images/arrow-down.png" alt="downward" />
               </div>
@@ -463,10 +489,24 @@
               Frameworks
               <img src="assets/images/arrow-forward.png" alt="forward" />
             </li>
+            <ul class="frameworks-list">
+              <li>React</li>
+              <li>Tailwind CSS</li>
+              <li>Material UI</li>
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+            </ul>
             <hr />
             <li class="framework" title="skills">
               Skills <img src="assets/images/arrow-forward.png" alt="forward" />
             </li>
+            <ul class="frameworks-list">
+              <li>React</li>
+              <li>Tailwind CSS</li>
+              <li>Material UI</li>
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+            </ul>
             <hr />
           </ul>
         </section>
@@ -549,5 +589,9 @@
     <script src="./js/index.js"></script>
     <script src="./js/validate.js"></script>
     <script src="./js/localStorage.js"></script>
+    <script
+      src="https://kit.fontawesome.com/14cc5091cc.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

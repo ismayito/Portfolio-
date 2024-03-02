@@ -1,20 +1,23 @@
-const menuBtn = document.getElementById('menu-close-btn');
-const menuSection = document.querySelector('section.mobile-menu');
-const closeButton = document.getElementById('close-btn');
-const menuItems = document.getElementsByClassName('menu-item');
+const menuBtn = document.getElementById("menu-close-btn");
+const menuSection = document.querySelector("section.mobile-menu");
+const closeButton = document.getElementById("close-btn");
+const menuItems = document.getElementsByClassName("menu-item");
 
 for (let i = 0; i < menuItems.length; i += 1) {
-  menuItems[i].addEventListener('click', () => {
-    menuSection.classList.remove('visible');
+  menuItems[i].addEventListener("click", () => {
+    menuSection.classList.remove("visible");
+    menuBtn.style.display = "block";
   });
 }
 
-menuBtn.addEventListener('click', () => {
-  menuSection.classList.add('visible');
+menuBtn.addEventListener("click", () => {
+  menuSection.classList.add("visible");
+  menuBtn.style.display = "none";
 });
 
-closeButton.addEventListener('click', () => {
-  menuSection.classList.remove('visible');
+closeButton.addEventListener("click", () => {
+  menuSection.classList.remove("visible");
+  menuBtn.style.display = "block";
 });
 
 // project-details-window-popup
@@ -22,59 +25,59 @@ closeButton.addEventListener('click', () => {
 const data = [
   {
     id: 1,
-    title: 'Tonic',
-    company: 'CANOPY',
-    role: 'Back End Dev',
-    year: '2015',
-    img1: 'assets/images/project-1.svg',
-    img: 'assets/images/Snapshoot Portfolio.svg',
+    title: "Tonic",
+    company: "CANOPY",
+    role: "Back End Dev",
+    year: "2015",
+    img1: "assets/images/project-1.svg",
+    img: "assets/images/Snapshoot Portfolio.svg",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    languages: ['html', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+    languages: ["html", "css", "javascript"],
+    liveLink: "https://ismayito.github.io/Portfolio-/",
+    sourceCode: "https://github.com/ismayito/Portfolio-",
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    company: 'FACEBOOK',
-    role: 'Full Stack Dev',
-    year: '2015',
-    img1: 'assets/images/project-2.svg',
-    img: 'assets/images/project-4.svg',
+    title: "Multi-Post Stories",
+    company: "FACEBOOK",
+    role: "Full Stack Dev",
+    year: "2015",
+    img1: "assets/images/project-2.svg",
+    img: "assets/images/project-4.svg",
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    languages: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "https://ismayito.github.io/Portfolio-/",
+    sourceCode: "https://github.com/ismayito/Portfolio-",
   },
   {
     id: 3,
-    title: 'Facebook 360',
-    company: 'FACEBOOK',
-    role: 'Full Stack Dev',
-    year: '2015',
-    img1: 'assets/images/project-3.svg',
-    img: 'assets/images/project-1.svg',
+    title: "Facebook 360",
+    company: "FACEBOOK",
+    role: "Full Stack Dev",
+    year: "2015",
+    img1: "assets/images/project-3.svg",
+    img: "assets/images/project-1.svg",
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+    languages: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "https://ismayito.github.io/Portfolio-/",
+    sourceCode: "https://github.com/ismayito/Portfolio-",
   },
   {
     id: 4,
-    title: 'Uber Navigation',
-    company: 'Uber',
-    role: 'Lead Developer',
-    year: '2018',
-    img1: 'assets/images/project-4.svg',
-    img: 'assets/images/project-2.svg',
+    title: "Uber Navigation",
+    company: "Uber",
+    role: "Lead Developer",
+    year: "2018",
+    img1: "assets/images/project-4.svg",
+    img: "assets/images/project-2.svg",
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    languages: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "https://ismayito.github.io/Portfolio-/",
+    sourceCode: "https://github.com/ismayito/Portfolio-",
   },
 ];
 
@@ -89,7 +92,7 @@ function createPopUp(
   img,
   languages,
   liveLink,
-  sourceCode,
+  sourceCode
 ) {
   return `
   <section class="popup-window"  id="popup-project-${id}">
@@ -138,7 +141,7 @@ function createPopUp(
           </article>
           <div class="lang-buttons">
             <ul class="languages">
-            ${languages.map((item) => `<li>${item}</li>`).join('')}
+            ${languages.map((item) => `<li>${item}</li>`).join("")}
             </ul>
             <img src="assets/images/vector 4.svg" alt="line" class="line" />
             <div class="window-buttons">
@@ -165,7 +168,7 @@ function createPopUp(
   `;
 }
 
-let final = '';
+let final = "";
 data.forEach((item) => {
   const html = createPopUp(
     item.id,
@@ -178,12 +181,12 @@ data.forEach((item) => {
     item.img,
     item.languages,
     item.liveLink,
-    item.sourceCode,
+    item.sourceCode
   );
   final += html;
 });
 
-document.getElementById('popup-container').innerHTML = final;
+document.getElementById("popup-container").innerHTML = final;
 
 // event listeners
 
@@ -191,11 +194,11 @@ data.forEach((item) => {
   // open event
   const { id } = item;
 
-  document.getElementById(`openpop-${id}`).addEventListener('click', () => {
-    document.getElementById(`popup-project-${id}`).classList.add('visible');
+  document.getElementById(`openpop-${id}`).addEventListener("click", () => {
+    document.getElementById(`popup-project-${id}`).classList.add("visible");
   });
   // close event
-  document.getElementById(`close-${id}`).addEventListener('click', () => {
-    document.getElementById(`popup-project-${id}`).classList.remove('visible');
+  document.getElementById(`close-${id}`).addEventListener("click", () => {
+    document.getElementById(`popup-project-${id}`).classList.remove("visible");
   });
 });
