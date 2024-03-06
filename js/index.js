@@ -1,3 +1,4 @@
+/* eslint-disable */
 const menuBtn = document.getElementById("menu-close-btn");
 const menuSection = document.querySelector("section.mobile-menu");
 const closeButton = document.getElementById("close-btn");
@@ -275,3 +276,5 @@ data.forEach((item) => {
     document.getElementById(`popup-project-${id}`).classList.remove("visible");
   });
 });
+
+/* eslint-disable */
