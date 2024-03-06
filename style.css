@@ -61,7 +61,7 @@ section.mobile-menu a {
 .logo {
   font-family: "Poppins", sans-serif;
   color: #6070ff;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 2rem;
   text-decoration: none;
@@ -104,6 +104,34 @@ section.mobile-menu a {
   font-size: 4rem;
   line-height: 5.2rem;
   padding-top: 8.1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.heading-mob {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image-mob {
+  border: 0.5rem solid #fff;
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+  align-items: center;
+
+  /* margin: 0 auto; */
+}
+
+.img-profile-mob {
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+.img-profile {
+  display: none;
 }
 
 .heading-desk {
@@ -130,6 +158,11 @@ section.mobile-menu a {
   align-items: center;
   padding-left: 0;
   gap: 2rem;
+}
+
+.linkin-img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .list {
@@ -288,6 +321,10 @@ section.mobile-menu a {
   line-height: 1.6rem;
 }
 
+.resume {
+  text-decoration: none;
+}
+
 .categories-desk {
   display: none;
 }
@@ -322,6 +359,7 @@ section.mobile-menu a {
 
 .languages {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   gap: 0.8rem;
   font-weight: 500;
@@ -340,6 +378,12 @@ section.mobile-menu a {
   border-radius: 0.8rem;
   background: #ebebff;
   color: #6070ff;
+}
+
+.rubi-image {
+  width: 5rem;
+  height: 5.1rem;
+  border-radius: 100%;
 }
 
 .see-project {
@@ -407,13 +451,10 @@ section.mobile-menu a {
   width: 35% !important;
 }
 
-.about-languages {
-  margin: 0 2.4rem;
-}
-
 .lang-skills {
   padding-left: 0;
   font-family: "Poppins", sans-serif;
+  width: 90%;
 }
 
 .lang-skills li {
@@ -579,9 +620,47 @@ section.mobile-menu a {
   margin: 5px 0;
 }
 
+.frameworks-list {
+  list-style-type: circle;
+  padding: 2px;
+  margin-bottom: 12px;
+  margin-left: 2rem;
+  color: #344563;
+}
+
+.frameworks-list > li {
+  list-style-type: disc;
+  font-size: 16px !important;
+}
+
 /* desktop version css styles */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 829px) {
+  .heading-container-desk {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile-image {
+    border: 0.5rem solid #fff;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    margin-top: 8rem;
+  }
+
+  .img-profile {
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+    border-radius: 100%;
+    display: block;
+  }
+
+  .profile-image-mob {
+    display: none !important;
+  }
+
   .navbar {
     display: none;
   }
@@ -612,6 +691,14 @@ section.mobile-menu a {
   .links a {
     color: #344563;
     text-decoration: none;
+  }
+
+  .links a:hover {
+    padding: 4px 8px;
+    background-color: #2230d2;
+    color: #fff;
+    border-radius: 4px;
+    border: none !important;
   }
 
   .headilne-desk {
@@ -777,7 +864,7 @@ section.mobile-menu a {
 
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     padding-top: 14.2rem;
     background-color: #fff;
   }
@@ -785,10 +872,6 @@ section.mobile-menu a {
   .about-intro {
     margin-top: 0;
     padding-left: 14.6rem;
-  }
-
-  .about-languages {
-    padding-right: 14.6rem;
   }
 
   .title-about {
