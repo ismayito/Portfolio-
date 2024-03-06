@@ -321,6 +321,10 @@ section.mobile-menu a {
   line-height: 1.6rem;
 }
 
+.resume {
+  text-decoration: none;
+}
+
 .categories-desk {
   display: none;
 }
@@ -355,6 +359,7 @@ section.mobile-menu a {
 
 .languages {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   gap: 0.8rem;
   font-weight: 500;
@@ -373,6 +378,12 @@ section.mobile-menu a {
   border-radius: 0.8rem;
   background: #ebebff;
   color: #6070ff;
+}
+
+.rubi-image {
+  width: 5rem;
+  height: 5.1rem;
+  border-radius: 100%;
 }
 
 .see-project {
