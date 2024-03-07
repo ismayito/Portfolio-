@@ -3,22 +3,26 @@ const menuBtn = document.getElementById("menu-close-btn");
 const menuSection = document.querySelector("section.mobile-menu");
 const closeButton = document.getElementById("close-btn");
 const menuItems = document.getElementsByClassName("menu-item");
+const header = document.querySelector(".header-container");
 
 for (let i = 0; i < menuItems.length; i += 1) {
   menuItems[i].addEventListener("click", () => {
     menuSection.classList.remove("visible");
     menuBtn.style.display = "block";
+    header.style.position = "fixed";
   });
 }
 
 menuBtn.addEventListener("click", () => {
   menuSection.classList.add("visible");
   menuBtn.style.display = "none";
+  header.style.position = "static";
 });
 
 closeButton.addEventListener("click", () => {
   menuSection.classList.remove("visible");
   menuBtn.style.display = "block";
+  header.style.position = "fixed";
 });
 
 // project-details-window-popup
@@ -34,7 +38,7 @@ const data = [
     img: "assets/images/HealthCare.png",
     description:
       "A smart way Application to assist users make  healthcare decisions and book appointments with doctors. It helps to save users booking time by 30%",
-    languages: ["html", "css", "javascript", "Tailwind CSS", "React", "Rails"],
+    languages: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Rails"],
     liveLink: "https://healthcare-app-frontend.vercel.app/",
     sourceCode: "https://github.com/mahdinoori2000/healthcare-app-frontend",
   },
@@ -49,12 +53,12 @@ const data = [
     description:
       "A website application the orchestrate the noise world of eCommerce. It makes the managing of products on eCommerce websites easy ",
     languages: [
-      "html",
+      "HTML",
       "React",
       "Zustand",
-      "css",
+      "CSS",
       "Headless UI",
-      "javascript",
+      "JavaScript",
       "TypeScript",
       "Tailwind CSS",
       "Next.js",
@@ -71,8 +75,8 @@ const data = [
     img1: "assets/images/TravellersHub.png",
     img: "assets/images/TravellersHub.png",
     description:
-      " React Javascript website project which makes use of react Javascript to hit the API, it displays a list of missions , rockets from the API to the user, the user is able to make a booking for the mission or cancel the booking of the earlier booked mission.",
-    languages: ["html", "React", "Redux", "RestFull API", "css", "javascript"],
+      " React JavaScript website project which makes use of react JavaScript to hit the API, it displays a list of missions , rockets from the API to the user, the user is able to make a booking for the mission or cancel the booking of the earlier booked mission.",
+    languages: ["HTML", "React", "Redux", "RestFull API", "CSS", "JavaScript"],
     liveLink: "https://spacetravelershubakhun.netlify.app/",
     sourceCode: "https://github.com/AbuTalha3/Space-Traveler-s-Hub",
   },
@@ -86,7 +90,7 @@ const data = [
     img: "assets/images/Tabler.png",
     description:
       " A better way to view and analyze product sales and order statistics. It helps to track sales and orders of a specific product thus improving on product performance.",
-    languages: ["html", "Next js", "Tailwind CSS", "css", "javascript"],
+    languages: ["HTML", "Next js", "Tailwind CSS", "CSS", "JavaScript"],
     liveLink: "https://tabler-io-project.vercel.app/",
     sourceCode: "https://github.com/ismayito/Tabler.io-Project",
   },
@@ -100,7 +104,7 @@ const data = [
     img: "assets/images/Conference.png",
     description:
       "A conference website where different conferences are listed. It helps to make the booking of conference easy and improves conference attendance easy by sending attendance alerts to users.",
-    languages: ["html", "css", "javascript"],
+    languages: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://ismayito.github.io/Capstone-Project-1/",
     sourceCode: "https://github.com/ismayito/Capstone-Project-1",
   },
@@ -114,7 +118,7 @@ const data = [
     img: "assets/images/Financial_app.png",
     description:
       "This app was used to display the current financial data status from different financial and foreign exchange institutions and companies. The user can see the available statics and is able to make an informed decision.This data was fetched and provided by financial public API.The user can also search for specific financial data",
-    languages: ["html", "React", "css", "javascript"],
+    languages: ["HTML", "React", "CSS", "JavaScript"],
     liveLink: "https://animated-nougat-6a7347.netlify.app/",
     sourceCode: "https://github.com/ismayito/financial-data-app",
   },
@@ -129,12 +133,12 @@ const data = [
     description:
       "This is the application that helps the user to track the expenses made at a particular time. It helps a user to smartly know on which items he spends most and also helps him to improve on his spending habitsThis is the application that helps the user to track the expenses made at a particular time. It helps a user to smartly know on which items he spends most and also helps him to improve on his spending habits",
     languages: [
-      "html",
-      "Ruby on rails",
+      "HTML",
+      "Ruby on Rails",
       "Databases",
       "PostgreSQL",
-      "css",
-      "javascript",
+      "CSS",
+      "JavaScript",
     ],
     liveLink: "https://rails-budget-app-tee4.onrender.com/",
     sourceCode: "https://github.com/ismayito/Rails-budget-app",
@@ -149,7 +153,7 @@ const data = [
     img: "assets/images/BagsShop.png",
     description:
       "A premier destination for high-quality bags and accessories that combine style, functionality, and durability.Your bag is more than just an accessory—it's a reflection of your personality and lifestyle. That's why we're dedicated to curating a diverse collection of bags that cater to every taste and need.",
-    languages: ["html", "Material UI", "css", "javascript"],
+    languages: ["HTML", "Material UI", "CSS", "JavaScript"],
     liveLink: "https://mybags-shop.netlify.app/",
     sourceCode: "https://github.com/ismayito/Portfolio-",
   },
