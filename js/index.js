@@ -2,19 +2,26 @@ const menuBtn = document.getElementById("menu-close-btn");
 const menuSection = document.querySelector("section.mobile-menu");
 const closeButton = document.getElementById("close-btn");
 const menuItems = document.getElementsByClassName("menu-item");
+const header = document.querySelector(".header-container");
 
 for (let i = 0; i < menuItems.length; i += 1) {
   menuItems[i].addEventListener("click", () => {
     menuSection.classList.remove("visible");
+    menuBtn.style.display = "block";
+    header.style.position = "fixed";
   });
 }
 
 menuBtn.addEventListener("click", () => {
   menuSection.classList.add("visible");
+  menuBtn.style.display = "none";
+  header.style.position = "static";
 });
 
 closeButton.addEventListener("click", () => {
   menuSection.classList.remove("visible");
+  menuBtn.style.display = "block";
+  header.style.position = "fixed";
 });
 
 // project-details-window-popup
