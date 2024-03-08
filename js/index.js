@@ -1,28 +1,20 @@
-/* eslint-disable */
 const menuBtn = document.getElementById("menu-close-btn");
 const menuSection = document.querySelector("section.mobile-menu");
 const closeButton = document.getElementById("close-btn");
 const menuItems = document.getElementsByClassName("menu-item");
-const header = document.querySelector(".header-container");
 
 for (let i = 0; i < menuItems.length; i += 1) {
   menuItems[i].addEventListener("click", () => {
     menuSection.classList.remove("visible");
-    menuBtn.style.display = "block";
-    header.style.position = "fixed";
   });
 }
 
 menuBtn.addEventListener("click", () => {
   menuSection.classList.add("visible");
-  menuBtn.style.display = "none";
-  header.style.position = "static";
 });
 
 closeButton.addEventListener("click", () => {
   menuSection.classList.remove("visible");
-  menuBtn.style.display = "block";
-  header.style.position = "fixed";
 });
 
 // project-details-window-popup
@@ -30,64 +22,54 @@ closeButton.addEventListener("click", () => {
 const data = [
   {
     id: 1,
-    title: "Healthcare App",
-    company: "Innovation Village",
-    role: "Full Stack Developer",
-    year: "2024",
-    img1: "assets/images/HealthCare.png",
-    img: "assets/images/HealthCare.png",
+    title: "Tonic",
+    company: "CANOPY",
+    role: "Back End Dev",
+    year: "2015",
+    img1: "assets/images/project-1.svg",
+    img: "assets/images/Snapshoot Portfolio.svg",
     description:
-      "A smart way Application to assist users make  healthcare decisions and book appointments with doctors. It helps to save users booking time by 30%",
-    languages: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Rails"],
-    liveLink: "https://healthcare-app-frontend.vercel.app/",
-    sourceCode: "https://github.com/mahdinoori2000/healthcare-app-frontend",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    languages: ["html", "css", "javascript"],
+    liveLink: "https://ismayito.github.io/Portfolio-/",
+    sourceCode: "https://github.com/ismayito/Portfolio-",
   },
   {
     id: 2,
-    title: "Keymono",
-    company: "Keymono",
-    role: "Front end  Developer",
-    year: "2023",
-    img1: "assets/images/keymono.png",
-    img: "assets/images/keymono.png",
+    title: "Multi-Post Stories",
+    company: "FACEBOOK",
+    role: "Full Stack Dev",
+    year: "2015",
+    img1: "assets/images/project-2.svg",
+    img: "assets/images/project-4.svg",
     description:
-      "A website application the orchestrate the noise world of eCommerce. It makes the managing of products on eCommerce websites easy ",
-    languages: [
-      "HTML",
-      "React",
-      "Zustand",
-      "CSS",
-      "Headless UI",
-      "JavaScript",
-      "TypeScript",
-      "Tailwind CSS",
-      "Next.js",
-    ],
-    liveLink: "https://console.keymono.com/",
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    languages: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "https://ismayito.github.io/Portfolio-/",
     sourceCode: "https://github.com/ismayito/Portfolio-",
   },
   {
     id: 3,
-    title: "Travelers`s Hub",
-    company: "MICROVERSE",
-    role: "Full Stack Developer",
-    year: "2023",
-    img1: "assets/images/TravellersHub.png",
-    img: "assets/images/TravellersHub.png",
+    title: "Facebook 360",
+    company: "FACEBOOK",
+    role: "Full Stack Dev",
+    year: "2015",
+    img1: "assets/images/project-3.svg",
+    img: "assets/images/project-1.svg",
     description:
-      " React JavaScript website project which makes use of react JavaScript to hit the API, it displays a list of missions , rockets from the API to the user, the user is able to make a booking for the mission or cancel the booking of the earlier booked mission.",
-    languages: ["HTML", "React", "Redux", "RestFull API", "CSS", "JavaScript"],
-    liveLink: "https://spacetravelershubakhun.netlify.app/",
-    sourceCode: "https://github.com/AbuTalha3/Space-Traveler-s-Hub",
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    languages: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "https://ismayito.github.io/Portfolio-/",
+    sourceCode: "https://github.com/ismayito/Portfolio-",
   },
   {
     id: 4,
-    title: "Tabler dashboard",
-    company: "KEYMONO",
-    role: "Front end Developer",
-    year: "2023",
-    img1: "assets/images/Tabler.png",
-    img: "assets/images/Tabler.png",
+    title: "Uber Navigation",
+    company: "Uber",
+    role: "Lead Developer",
+    year: "2018",
+    img1: "assets/images/project-4.svg",
+    img: "assets/images/project-2.svg",
     description:
       " A better way to view and analyze product sales and order statistics. It helps to track sales and orders of a specific product thus improving on product performance.",
     languages: ["HTML", "Next js", "Tailwind CSS", "CSS", "JavaScript"],
@@ -131,7 +113,7 @@ const data = [
     img1: "assets/images/Budget.png",
     img: "assets/images/Budget.png",
     description:
-      "This is the application that helps the user to track the expenses made at a particular time. It helps a user to smartly know on which items he spends most and also helps him to improve on his spending habitsThis is the application that helps the user to track the expenses made at a particular time. It helps a user to smartly know on which items he spends most and also helps him to improve on his spending habits",
+      "This is the application that helps the user to track the expenses made at a particular time. It helps a user to smartly know on which items he spends most and also helps him to improve on his spending habits.",
     languages: [
       "HTML",
       "Ruby on Rails",
@@ -224,13 +206,13 @@ function createPopUp(
             <img src="assets/images/vector 4.svg" alt="line" class="line" />
             <div class="window-buttons">
               <button class="window-btn">
-              <a href='${liveLink}' class="PopUp-link">
+              <a href='${liveLink}' target="_blank" class="PopUp-link">
                See live
                 <span><img src="assets/images/live.svg" alt="live" /></span>
                 
               </button>
               <button class="window-btn">
-              <a href='${sourceCode}' class="PopUp-link">
+              <a href='${sourceCode}'target="_blank" class="PopUp-link">
                 See source
                 <span
                   ><img src="assets/images/git-modal.svg" alt="source code"
