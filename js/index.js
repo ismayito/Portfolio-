@@ -18,7 +18,7 @@ menuBtn.addEventListener("click", () => {
   header.style.position = "static";
 });
 
-closeButton.addEventListener("click", () => {
+https: closeButton.addEventListener("click", () => {
   menuSection.classList.remove("visible");
   menuBtn.style.display = "block";
   header.style.position = "fixed";
